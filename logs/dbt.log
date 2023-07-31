@@ -1,0 +1,222 @@
+[0m19:10:10.796440 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267DE97A3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267DF2577D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267DF104E10>]}
+
+
+============================== 19:10:10.800429 | 9e750a7c-d55a-4670-be4b-25df5a5192a0 ==============================
+[0m19:10:10.800429 [info ] [MainThread]: Running with dbt=1.6.0
+[0m19:10:10.800429 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\danic\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init analytics_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m19:10:10.801426 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/danic/.dbt')}
+[0m19:10:10.803420 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m19:10:10.804417 [debug] [MainThread]: Starter project path: C:\Users\danic\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m19:10:10.850389 [info ] [MainThread]: 
+Your new dbt project "analytics_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:10:10.851386 [info ] [MainThread]: Setting up your profile.
+[0m19:12:42.557985 [info ] [MainThread]: Profile analytics_dbt written to C:\Users\danic\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:12:42.559980 [debug] [MainThread]: Command `dbt init` succeeded at 19:12:42.559980 after 151.77 seconds
+[0m19:12:42.560976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267D8208C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267DF257E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000267DF257CD0>]}
+[0m19:12:42.561974 [debug] [MainThread]: Flushing usage events
+[0m19:13:47.098096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002545715C8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002545715E710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000254575F8810>]}
+
+
+============================== 19:13:47.101511 | 054b12e4-d253-4038-904d-64b378fcdb66 ==============================
+[0m19:13:47.101511 [info ] [MainThread]: Running with dbt=1.6.0
+[0m19:13:47.102509 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\danic\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:13:47.103506 [info ] [MainThread]: dbt version: 1.6.0
+[0m19:13:47.104503 [info ] [MainThread]: python version: 3.11.4
+[0m19:13:47.105500 [info ] [MainThread]: python path: C:\Users\danic\AppData\Local\Programs\Python\Python311\python.exe
+[0m19:13:47.106498 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m19:13:47.241125 [info ] [MainThread]: Using profiles dir at C:\Users\danic\.dbt
+[0m19:13:47.242122 [info ] [MainThread]: Using profiles.yml file at C:\Users\danic\.dbt\profiles.yml
+[0m19:13:47.243121 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\danic\OneDrive\Documentos\Python\Projetos\DBT\dbt_project.yml
+[0m19:13:47.245116 [info ] [MainThread]: adapter type: redshift
+[0m19:13:47.246113 [info ] [MainThread]: adapter version: 1.6.0
+[0m19:13:47.247110 [info ] [MainThread]: Configuration:
+[0m19:13:47.248106 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:13:47.249105 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:13:47.250101 [info ] [MainThread]: Required dependencies:
+[0m19:13:47.251100 [debug] [MainThread]: Executing "git --help"
+[0m19:13:47.258080 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m19:13:47.259078 [info ] [MainThread]: Connection:
+[0m19:13:47.260075 [info ] [MainThread]:   host: default-workgroup.124435243945.us-east-1.redshift-serverless.amazonaws.com
+[0m19:13:47.262071 [info ] [MainThread]:   user: dwadmin
+[0m19:13:47.263088 [info ] [MainThread]:   port: 5439
+[0m19:13:47.265062 [info ] [MainThread]:   database: sample_data_dev
+[0m19:13:47.266059 [info ] [MainThread]:   method: database
+[0m19:13:47.268053 [info ] [MainThread]:   cluster_id: None
+[0m19:13:47.268053 [info ] [MainThread]:   iam_profile: None
+[0m19:13:47.269052 [info ] [MainThread]:   schema: tickit
+[0m19:13:47.270076 [info ] [MainThread]:   sslmode: prefer
+[0m19:13:47.271046 [info ] [MainThread]:   region: None
+[0m19:13:47.272043 [info ] [MainThread]:   sslmode: prefer
+[0m19:13:47.274038 [info ] [MainThread]:   region: None
+[0m19:13:47.275035 [info ] [MainThread]:   iam_profile: None
+[0m19:13:47.276032 [info ] [MainThread]:   autocreate: False
+[0m19:13:47.276032 [info ] [MainThread]:   db_groups: []
+[0m19:13:47.277030 [info ] [MainThread]:   ra3_node: False
+[0m19:13:47.278028 [info ] [MainThread]:   connect_timeout: None
+[0m19:13:47.280022 [info ] [MainThread]:   role: None
+[0m19:13:47.280022 [info ] [MainThread]:   retries: 1
+[0m19:13:47.281499 [info ] [MainThread]:   autocommit: True
+[0m19:13:47.282493 [info ] [MainThread]: Registered adapter: redshift=1.6.0
+[0m19:13:47.283490 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m19:13:47.289473 [debug] [MainThread]: Using redshift connection "debug"
+[0m19:13:47.290470 [debug] [MainThread]: On debug: select 1 as id
+[0m19:13:47.290470 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:13:47.292466 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m19:13:47.292466 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m19:13:49.564437 [debug] [MainThread]: SQL status: SUCCESS in 2.0 seconds
+[0m19:13:49.569422 [debug] [MainThread]: On debug: Close
+[0m19:13:49.573412 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:13:49.577400 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:13:49.580748 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\danic\OneDrive\Documentos\Python\Projetos\DBT\dbt_project.yml> not found
+
+[0m19:13:49.583739 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m19:13:49.586731 [debug] [MainThread]: Command `dbt debug` failed at 19:13:49.586731 after 2.51 seconds
+[0m19:13:49.588725 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:13:49.589952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002545715FC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025457C93950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002545715E3D0>]}
+[0m19:13:49.590942 [debug] [MainThread]: Flushing usage events
+[0m19:15:47.851343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028785589050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028785BAB250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028785982750>]}
+
+
+============================== 19:15:47.854674 | 53468e70-adaa-4a0b-ba58-eb39786f6199 ==============================
+[0m19:15:47.854674 [info ] [MainThread]: Running with dbt=1.6.0
+[0m19:15:47.855670 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\danic\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m19:15:47.856644 [info ] [MainThread]: dbt version: 1.6.0
+[0m19:15:47.857641 [info ] [MainThread]: python version: 3.11.4
+[0m19:15:47.858638 [info ] [MainThread]: python path: C:\Users\danic\AppData\Local\Programs\Python\Python311\python.exe
+[0m19:15:47.858638 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m19:15:47.983131 [info ] [MainThread]: Using profiles dir at C:\Users\danic\.dbt
+[0m19:15:47.984129 [info ] [MainThread]: Using profiles.yml file at C:\Users\danic\.dbt\profiles.yml
+[0m19:15:47.985126 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\danic\OneDrive\Documentos\Python\Projetos\DBT\dbt_project.yml
+[0m19:15:47.986123 [info ] [MainThread]: adapter type: redshift
+[0m19:15:47.987120 [info ] [MainThread]: adapter version: 1.6.0
+[0m19:15:47.987120 [info ] [MainThread]: Configuration:
+[0m19:15:47.988118 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:15:47.989115 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:15:47.990112 [info ] [MainThread]: Required dependencies:
+[0m19:15:47.990112 [debug] [MainThread]: Executing "git --help"
+[0m19:15:47.997094 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m19:15:47.998091 [info ] [MainThread]: Connection:
+[0m19:15:47.999089 [info ] [MainThread]:   host: default-workgroup.124435243945.us-east-1.redshift-serverless.amazonaws.com
+[0m19:15:48.001083 [info ] [MainThread]:   user: dwadmin
+[0m19:15:48.002081 [info ] [MainThread]:   port: 5439
+[0m19:15:48.003078 [info ] [MainThread]:   database: sample_data_dev
+[0m19:15:48.004075 [info ] [MainThread]:   method: database
+[0m19:15:48.005073 [info ] [MainThread]:   cluster_id: None
+[0m19:15:48.006070 [info ] [MainThread]:   iam_profile: None
+[0m19:15:48.008065 [info ] [MainThread]:   schema: tickit
+[0m19:15:48.009062 [info ] [MainThread]:   sslmode: prefer
+[0m19:15:48.010060 [info ] [MainThread]:   region: None
+[0m19:15:48.011057 [info ] [MainThread]:   sslmode: prefer
+[0m19:15:48.012054 [info ] [MainThread]:   region: None
+[0m19:15:48.014049 [info ] [MainThread]:   iam_profile: None
+[0m19:15:48.015046 [info ] [MainThread]:   autocreate: False
+[0m19:15:48.016043 [info ] [MainThread]:   db_groups: []
+[0m19:15:48.017041 [info ] [MainThread]:   ra3_node: False
+[0m19:15:48.018038 [info ] [MainThread]:   connect_timeout: None
+[0m19:15:48.019035 [info ] [MainThread]:   role: None
+[0m19:15:48.020033 [info ] [MainThread]:   retries: 1
+[0m19:15:48.021030 [info ] [MainThread]:   autocommit: True
+[0m19:15:48.022027 [info ] [MainThread]: Registered adapter: redshift=1.6.0
+[0m19:15:48.023025 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m19:15:48.028012 [debug] [MainThread]: Using redshift connection "debug"
+[0m19:15:48.029009 [debug] [MainThread]: On debug: select 1 as id
+[0m19:15:48.029009 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:15:48.031002 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m19:15:48.031002 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m19:15:49.709935 [debug] [MainThread]: SQL status: SUCCESS in 2.0 seconds
+[0m19:15:49.710935 [debug] [MainThread]: On debug: Close
+[0m19:15:49.711932 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:15:49.712930 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:15:49.713928 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\danic\OneDrive\Documentos\Python\Projetos\DBT\dbt_project.yml> not found
+
+[0m19:15:49.714925 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH and that the user has permissions to run it: "git"
+
+[0m19:15:49.716919 [debug] [MainThread]: Command `dbt debug` failed at 19:15:49.716919 after 1.88 seconds
+[0m19:15:49.716919 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:15:49.717917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287FEDEA450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287FEDEA410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028785BAB250>]}
+[0m19:15:49.718914 [debug] [MainThread]: Flushing usage events
+[0m19:16:58.616580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027AE1368DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027AE1415ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027AE0F5A8D0>]}
+
+
+============================== 19:16:58.620546 | e1496b0a-5816-4fc0-a429-02a070dacd63 ==============================
+[0m19:16:58.620546 [info ] [MainThread]: Running with dbt=1.6.0
+[0m19:16:58.621568 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\danic\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:16:58.622541 [info ] [MainThread]: dbt version: 1.6.0
+[0m19:16:58.623538 [info ] [MainThread]: python version: 3.11.4
+[0m19:16:58.624535 [info ] [MainThread]: python path: C:\Users\danic\AppData\Local\Programs\Python\Python311\python.exe
+[0m19:16:58.625534 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m19:16:58.778125 [info ] [MainThread]: Using profiles dir at C:\Users\danic\.dbt
+[0m19:16:58.778125 [info ] [MainThread]: Using profiles.yml file at C:\Users\danic\.dbt\profiles.yml
+[0m19:16:58.779122 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\danic\OneDrive\Documentos\Python\Projetos\DBT\dbt_project.yml
+[0m19:16:58.780120 [info ] [MainThread]: adapter type: redshift
+[0m19:16:58.781117 [info ] [MainThread]: adapter version: 1.6.0
+[0m19:16:58.781117 [info ] [MainThread]: Configuration:
+[0m19:16:58.782114 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:16:58.783112 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:16:58.783112 [info ] [MainThread]: Required dependencies:
+[0m19:16:58.784109 [debug] [MainThread]: Executing "git --help"
+[0m19:16:58.818019 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:16:58.819039 [debug] [MainThread]: STDERR: "b''"
+[0m19:16:58.819039 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:16:58.820040 [info ] [MainThread]: Connection:
+[0m19:16:58.822008 [info ] [MainThread]:   host: default-workgroup.124435243945.us-east-1.redshift-serverless.amazonaws.com
+[0m19:16:58.822008 [info ] [MainThread]:   user: dwadmin
+[0m19:16:58.823005 [info ] [MainThread]:   port: 5439
+[0m19:16:58.824002 [info ] [MainThread]:   database: sample_data_dev
+[0m19:16:58.825000 [info ] [MainThread]:   method: database
+[0m19:16:58.825000 [info ] [MainThread]:   cluster_id: None
+[0m19:16:58.826005 [info ] [MainThread]:   iam_profile: None
+[0m19:16:58.826995 [info ] [MainThread]:   schema: tickit
+[0m19:16:58.828016 [info ] [MainThread]:   sslmode: prefer
+[0m19:16:58.828989 [info ] [MainThread]:   region: None
+[0m19:16:58.829986 [info ] [MainThread]:   sslmode: prefer
+[0m19:16:58.830984 [info ] [MainThread]:   region: None
+[0m19:16:58.831981 [info ] [MainThread]:   iam_profile: None
+[0m19:16:58.833976 [info ] [MainThread]:   autocreate: False
+[0m19:16:58.834973 [info ] [MainThread]:   db_groups: []
+[0m19:16:58.835970 [info ] [MainThread]:   ra3_node: False
+[0m19:16:58.836968 [info ] [MainThread]:   connect_timeout: None
+[0m19:16:58.837965 [info ] [MainThread]:   role: None
+[0m19:16:58.838963 [info ] [MainThread]:   retries: 1
+[0m19:16:58.839960 [info ] [MainThread]:   autocommit: True
+[0m19:16:58.839960 [info ] [MainThread]: Registered adapter: redshift=1.6.0
+[0m19:16:58.840983 [debug] [MainThread]: Acquiring new redshift connection 'debug'
+[0m19:16:58.845943 [debug] [MainThread]: Using redshift connection "debug"
+[0m19:16:58.846941 [debug] [MainThread]: On debug: select 1 as id
+[0m19:16:58.846941 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:16:58.848935 [debug] [MainThread]: Redshift adapter: Establishing connection using ssl with `sslmode` set to 'prefer'.To connect without ssl, set `sslmode` to 'disable'.
+[0m19:16:58.848935 [debug] [MainThread]: Redshift adapter: Connecting to redshift with username/password based auth...
+[0m19:17:01.042119 [debug] [MainThread]: SQL status: SUCCESS in 2.0 seconds
+[0m19:17:01.043143 [debug] [MainThread]: On debug: Close
+[0m19:17:01.044113 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:17:01.045111 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:17:01.046109 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\danic\OneDrive\Documentos\Python\Projetos\DBT\dbt_project.yml> not found
+
+[0m19:17:01.048129 [debug] [MainThread]: Command `dbt debug` failed at 19:17:01.048129 after 2.44 seconds
+[0m19:17:01.048129 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:17:01.049101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027AE13DC150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027AE0EE9190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027AE0ABB810>]}
+[0m19:17:01.050098 [debug] [MainThread]: Flushing usage events
