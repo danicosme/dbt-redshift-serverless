@@ -296,3 +296,17 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m19:01:28.639118 [debug] [MainThread]: Command `dbt debug` failed at 19:01:28.638649 after 0.28 seconds
 [0m19:01:28.644491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f46385ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f45078d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f45078be0>]}
 [0m19:01:28.648481 [debug] [MainThread]: Flushing usage events
+[0m11:25:58.507499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f745ef75ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f74611dbc10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f745dc4cee0>]}
+
+
+============================== 11:25:58.513220 | 9b8c3edd-663e-4a1b-b603-60a134ab0a5f ==============================
+[0m11:25:58.513220 [info ] [MainThread]: Running with dbt=1.5.3
+[0m11:25:58.515826 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/daniele/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m11:25:58.518739 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/danic/OneDrive/Documentos/GitHub/dbt-redshift-serverless/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:25:58.522027 [debug] [MainThread]: Command `dbt test` failed at 11:25:58.521688 after 0.03 seconds
+[0m11:25:58.526071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f745ef75ab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f745dc4cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f745dc4caf0>]}
+[0m11:25:58.529151 [debug] [MainThread]: Flushing usage events
