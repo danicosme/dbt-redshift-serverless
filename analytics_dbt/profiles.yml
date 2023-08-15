@@ -4,8 +4,8 @@ analytics_dbt:
     dev:
       type: redshift
       host: default-workgroup.124435243945.us-east-1.redshift-serverless.amazonaws.com
-      user: admin
-      password: Admin2023
+      user: 
+      password:
       port: 5439
       dbname: sample_data_dev
       schema: tickit
